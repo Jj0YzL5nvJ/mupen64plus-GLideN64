@@ -1,4 +1,5 @@
 version: 1.0.{build}
+image: Visual Studio 2017
 clone_folder: c:\mg
 environment:
   MSYS2_DIR: msys64
