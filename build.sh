@@ -74,7 +74,7 @@ make -j4
 if [[ $UNAME == *"MINGW"* ]]; then
   cp mupen64plus-video-GLideN64$suffix $install_dir
 else
-  cp plugin/release/mupen64plus-video-GLideN64$suffix $install_dir
+  cp plugin/Release/mupen64plus-video-GLideN64$suffix $install_dir
 fi
 cp $base_dir/GLideN64/ini/GLideN64.custom.ini $install_dir
 
