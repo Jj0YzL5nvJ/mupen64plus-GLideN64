@@ -80,7 +80,7 @@ cp $base_dir/GLideN64/ini/GLideN64.custom.ini $install_dir
 
 if [[ $UNAME == *"MINGW"* ]]; then
   cd $base_dir/angrylion-rdp-plus/msvc
-  sed -i 's/python /python3 /g' core/core.vcxproj
+  sed -i 's/python /python3 /g' core.vcxproj
   if [[ $UNAME == *"MINGW64"* ]]; then
     MSBuild.exe angrylion-plus.sln //t:plugin-mupen64plus //p:Configuration=Release //p:Platform=x64
   else
