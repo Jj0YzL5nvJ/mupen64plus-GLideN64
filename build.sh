@@ -152,9 +152,6 @@ fi
 if [[ $1 == "aws" ]]; then
   rm $base_dir/*.zip
   DISTRO=$(lsb_release -i | cut -d: -f2 | sed s/'^\t'//)
-  if [[ $DISTRO == "Ubuntu" ]]; then
-    my_os=$DISTRO
-  fi
   zip -r mupen64plus-GLideN64-$my_os.zip mupen64plus
   aws s3 cp mupen64plus-GLideN64-*.zip s3://m64p/m64p/ --acl public-read
 fi
