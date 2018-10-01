@@ -28,6 +28,8 @@ build_script:
     bash -c "pacman -Syu --noconfirm"
     
     bash -c "rm -rf /mingw64/share/man/man3/*.3ssl.gz"
+    
+    bash -c "rm -rf /mingw32/share/man/man3/*.3ssl.gz"
 
     bash -c "pacman -Syu --noconfirm"
 
