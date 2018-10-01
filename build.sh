@@ -64,6 +64,7 @@ cd $base_dir/GLideN64/src
 ./getRevision.sh
 cd $base_dir/GLideN64/projects/cmake
 if [[ $UNAME == *"MINGW"* ]]; then
+  sed -i 's/check_ipo_supported(RESULT result)//g' ../../src/CMakeLists.txt
   cmake -G "MSYS Makefiles" -DVEC4_OPT=On -DCRC_OPT=On -DMUPENPLUSAPI=On ../../src/
 else
   rm -rf ../../src/GLideNHQ/inc
