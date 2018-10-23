@@ -16,6 +16,8 @@ environment:
       myarch: i686
 
 build_script:
+- del C:\Windows\System32\libssl-*.dll C:\Windows\system32\libcrypto-*.dll
+- del C:\Windows\SysWOW64\libssl-*.dll C:\Windows\SysWOW64\libcrypto-*.dll
 - cmd: >-
     cd %APPVEYOR_BUILD_FOLDER%
 
