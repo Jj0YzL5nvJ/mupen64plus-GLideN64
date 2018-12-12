@@ -123,6 +123,9 @@ if [[ $UNAME == *"MINGW"* ]]; then
   cp /$mingw_prefix/bin/libsamplerate-0.dll $install_dir
   cp /$mingw_prefix/bin/libjasper-4.dll $install_dir
   cp /$mingw_prefix/bin/libjpeg-8.dll $install_dir
+  cp /$mingw_prefix/bin/libicudt62.dll $install_dir
+  cp /$mingw_prefix/bin/libicuin62.dll $install_dir
+  cp /$mingw_prefix/bin/libicuuc62.dll $install_dir
   cp $base_dir/7za.exe $install_dir
 elif [[ $UNAME == "Darwin" ]]; then
   my_os=macos
